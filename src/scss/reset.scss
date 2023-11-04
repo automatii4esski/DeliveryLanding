@@ -3,14 +3,23 @@
 *::after {
   margin: 0;
   padding: 0;
-  block-size: border-box;
+  box-sizing: border-box;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 ul,
 ol {
   list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
 }

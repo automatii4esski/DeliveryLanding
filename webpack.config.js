@@ -52,7 +52,7 @@ module.exports = {
       directory: path.join(__dirname, 'src'),
     },
     compress: true,
-    port: 3000,
+    port: 3001,
     open: true,
     allowedHosts: 'all',
   },

@@ -1,5 +1,35 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .container {
   max-width: 1200;
   margin: 0 auto;
   padding: 0 13px;
+}
+
+.wide-container {
+  max-width: 1326px;
+  margin: 0 auto;
+  padding: 0 13px;
+}
+
+.alert {
+  position: fixed;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.15s, opacity 0.15s;
+  background-color: $color-green;
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 20px;
+  opacity: 0;
+
+  &--active {
+    transform: translateX(-50%) translateY(calc(100% + 20px));
+    opacity: 1;
+  }
 }

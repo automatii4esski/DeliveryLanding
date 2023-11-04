@@ -3,9 +3,387 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <h1>asdsadss</h1>
+    <div id="top"></div>
+    <!-- Header -->
+    <header class="header">
+      <div class="wide-container">
+        <div class="header__inner">
+          <a href="#top" class="logo">
+            <img class="logo__img" src="./assets/img/logo.png" alt="logo" />
+          </a>
+          <div class="header__auth">
+            <a href="" class="header__login">Login</a>
+            <a href="" class="header__register">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Promo -->
+    <section class="promo">
+      <div class="wide-container">
+        <div class="promo__inner">
+          <div class="promo-links">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"> About</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Tracking</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Pricing</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Contact </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Help</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="promo-socials">
+              <a
+                class="promo-socials__item promo-socials__item--facebook"
+                href="#"
+              >
+                <img
+                  class="promo-socials__icon promo-socials__icon--facebook"
+                  src="./assets/img/icons/facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a
+                class="promo-socials__item promo-socials__item--google"
+                href="#"
+                i
+              >
+                <img
+                  class="promo-socials__icon promo-socials__icon--google"
+                  src="./assets/img/icons/google.svg"
+                  alt="google"
+                />
+              </a>
+              <a
+                class="promo-socials__item promo-socials__item--twitter"
+                href="#"
+              >
+                <img
+                  class="promo-socials__icon promo-socials__icon--twitter"
+                  src="./assets/img/icons/twitter.svg"
+                  alt="twitter"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="promo-slider">
+            <div class="promo-slider__items-wrapper">
+              <div class="promo-slider__item">
+                <img
+                  class="promo-slider__item-img"
+                  src="./assets/img/content/promo-slider1.jpg"
+                  alt="courier"
+                />
+                <h3
+                  class="promo-slider__item-title promo-slider__item-title--yellow"
+                >
+                  Fast & Safe Delivery
+                </h3>
+              </div>
+              <div class="promo-slider__item">
+                <img
+                  class="promo-slider__item-img"
+                  src="./assets/img/content/promo-slider-mini1.jpg"
+                  alt="courier"
+                />
+                <h3
+                  class="promo-slider__item-title promo-slider__item-title--green"
+                >
+                  Lorem ipsum dolor sit amet.
+                </h3>
+              </div>
+              <div class="promo-slider__item">
+                <img
+                  class="promo-slider__item-img"
+                  src="./assets/img/content/promo-slider-mini2.jpg"
+                  alt="courier"
+                />
+                <h3
+                  class="promo-slider__item-title promo-slider__item-title--red"
+                >
+                  Lorem ipsum dolor sit.
+                </h3>
+              </div>
+            </div>
+            <div class="promo-slider__mini-items">
+              <button
+                class="promo-slider__mini-item"
+                data-index="0"
+                type="button"
+              >
+                <img
+                  class="promo-slider__mini-img"
+                  src="./assets/img/content/promo-slider1.jpg"
+                  alt="courier"
+                />
+              </button>
+              <button
+                class="promo-slider__mini-item"
+                data-index="1"
+                type="button"
+              >
+                <img
+                  class="promo-slider__mini-img"
+                  src="./assets/img/content/promo-slider-mini1.jpg"
+                  alt="courier"
+                />
+              </button>
+              <button
+                class="promo-slider__mini-item"
+                data-index="2"
+                type="button"
+              >
+                <img
+                  class="promo-slider__mini-img"
+                  src="./assets/img/content/promo-slider-mini2.jpg"
+                  alt="worker"
+                />
+              </button>
+            </div>
+            <div class="promo-slider__controls">
+              <button class="promo-slider__arrow promo-slider__arrow-left">
+                <img
+                  class="promo-slider__arrow-icon"
+                  src="./assets/img/icons/arrow-left.svg"
+                  alt="arrow-left"
+                />
+              </button>
+              <button class="promo-slider__arrow promo-slider__arrow-right">
+                <img
+                  class="promo-slider__arrow-icon"
+                  src="./assets/img/icons/arrow-right.svg"
+                  alt="arrow-right"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="promo-form">
+            <h1 class="promo-form__title">
+              We Provide Best Courier & Parcel Service
+            </h1>
+            <div class="promo-form__inner">
+              <div class="promo-form__type-choice">
+                <button class="promo-form__type-button">Domestic</button>
+                <button class="promo-form__type-button">International</button>
+                <button class="promo-form__type-button">Vehicles</button>
+              </div>
+              <div class="promo-form__content">
+                <form action="" class="promo-form__content-item">
+                  <div class="promo-form__box">
+                    <div class="promo-form__radio-wrapper">
+                      <label class="promo-form__label-radio">
+                        <input
+                          name="variant"
+                          type="radio"
+                          class="promo-form__radio-input"
+                          value="courier"
+                          checked
+                          hidden
+                        />
+                        <img
+                          class="promo-form__icon promo-form__icon--docs"
+                          src="./assets/img/icons/docs.svg"
+                          alt="documents"
+                        />
+                        <p class="promo-form__radio-text">Courier</p>
+                      </label>
+                      <label class="promo-form__label-radio">
+                        <input
+                          name="variant"
+                          type="radio"
+                          class="promo-form__radio-input"
+                          value="parcel"
+                          hidden
+                        />
+                        <img
+                          class="promo-form__icon promo-form__icon--box"
+                          src="./assets/img/icons/box.svg"
+                          alt="box"
+                        />
+                        <p class="promo-form__radio-text">Parcel</p>
+                      </label>
+                    </div>
+
+                    <label class="promo-form__label-text">
+                      <h4 class="promo-form__label-title">Your Pincode</h4>
+                      <input
+                        class="promo-form__input promo-form__input-pincode"
+                        type="number"
+                        name="pincode"
+                        required
+                        placeholder="Enter yout pincode here"
+                      />
+                    </label>
+                  </div>
+                  <div class="promo-form__submit-wrapper">
+                    <button class="promo-form__submit" type="submit">
+                      Get a Quote Now
+                    </button>
+                  </div>
+                </form>
+                <form action="" class="promo-form__content-item">
+                  <div class="promo-form__box">
+                    <div class="promo-form__select-wrapper">
+                      <p class="promo-form__select-current"></p>
+                      <ul class="promo-form__select-list">
+                        <li class="promo-form__select-option" data-value="">
+                          Select Value
+                        </li>
+                        <li class="promo-form__select-option" data-value="1">
+                          Black
+                        </li>
+                        <li class="promo-form__select-option" data-value="2">
+                          White
+                        </li>
+                        <li class="promo-form__select-option" data-value="3">
+                          Yellow
+                        </li>
+                        <li
+                          class="promo-form__select-option"
+                          data-default
+                          data-value="4"
+                        >
+                          Red
+                        </li>
+                        <li class="promo-form__select-option" data-value="5">
+                          Orange
+                        </li>
+                      </ul>
+                      <input
+                        type="text"
+                        required
+                        class="promo-form__select-value"
+                      />
+                    </div>
+                    <label class="promo-form__label-checkbox">
+                      <input
+                        name="check"
+                        type="checkbox"
+                        class="promo-form__checkbox-input"
+                        checked
+                        hidden
+                      />
+                      <img
+                        class="promo-form__icon promo-form__icon--box"
+                        src="./assets/img/icons/box.svg"
+                        alt="box"
+                      />
+                      <p class="promo-form__checkbox-text">Checkbox</p>
+                    </label>
+                  </div>
+                  <div class="promo-form__submit-wrapper">
+                    <button class="promo-form__submit" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+                <form action="" class="promo-form__content-item">
+                  <div class="promo-form__box">
+                    <label class="promo-form__label-text">
+                      <h4 class="promo-form__label-title">Just text 1</h4>
+                      <input
+                        class="promo-form__input"
+                        type="text"
+                        name="text1"
+                        required
+                        minlength="5"
+                        placeholder="Type text 1"
+                      />
+                    </label>
+                    <label class="promo-form__label-text">
+                      <h4 class="promo-form__label-title">
+                        Just text 2 (optional)
+                      </h4>
+                      <input
+                        class="promo-form__input"
+                        type="text2"
+                        name="text2"
+                        placeholder="Type text 2"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="promo-form__submit-wrapper">
+                    <button class="promo-form__submit" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="promo-form__track">
+              <button class="promo-form__down-arrow" type="button">
+                <svg
+                  class="promo-form__down-icon"
+                  fill="#fff"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="60px"
+                  height="28px"
+                  viewBox="0 0 100 100"
+                  enable-background="new 0 0 100 100"
+                  xml:space="preserve"
+                  stroke="#fff"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58 c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022 c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <div class="promo-form__track-inner">
+                <div class="promo-form__track-box">
+                  <img
+                    class="promo-form__track-icon"
+                    src="./assets/img/icons/track.svg"
+                    alt="track"
+                  />
+                </div>
+
+                <p class="promo-form__track-text">Track Your Order</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="padding: 100px"></div>
+    <p class="alert"></p>
   </body>
 </html>
