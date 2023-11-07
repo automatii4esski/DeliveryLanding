@@ -17,7 +17,7 @@
 }
 
 .about__description {
-  color: #858585;
+  color: $color-gray;
   font-size: 16px;
   line-height: 29px;
   margin-bottom: 17px;
@@ -69,15 +69,15 @@
   color: #fff;
 
   &--blue {
-    background: #2765c8;
+    background: $color-blue;
   }
 
   &--green {
-    background: #37d679;
+    background: $color-green;
   }
 
   &--yellow {
-    background: #ffae00;
+    background: $color-yellow;
   }
 }
 

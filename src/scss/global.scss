@@ -20,7 +20,6 @@ body {
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  text-transform: uppercase;
   position: relative;
 }
 
@@ -32,6 +31,7 @@ body {
   transform: translateX(-50%);
   bottom: 8px;
   opacity: 0.06;
+  width: 100%;
 }
 
 .title__span,

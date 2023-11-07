@@ -1,0 +1,66 @@
+.track {
+  padding: 86px 0;
+  background: url('./assets/img/content/track-bg.jpg') top center/cover
+    no-repeat;
+}
+
+.track__inner {
+  display: flex;
+}
+
+.track__content {
+  margin-left: auto;
+  max-width: 602px;
+  width: 100%;
+  padding: 41px 44px 47px;
+  background: rgba(#4832dc, 0.6);
+  color: #fff;
+}
+
+.track__title {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.track__form {
+  margin-bottom: 9px;
+  background: #fff;
+  display: flex;
+  padding: 7px 9px 7px 21px;
+  border-radius: 10px;
+}
+
+.track__input {
+  flex: 1 1 auto;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+}
+
+.track__input::-webkit-inner-spin-button,
+.track__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.track__submit {
+  background: $color-yellow;
+  border-radius: 10px;
+  border: 2px solid $color-yellow;
+  text-align: center;
+  padding: 11px;
+  min-width: 130px;
+  color: #fff;
+  font-size: 15px;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover {
+    background: transparent;
+    color: #000;
+  }
+}
+
+.track__description {
+  font-weight: 300;
+}
