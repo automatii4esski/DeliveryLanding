@@ -1,0 +1,86 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px;
+  background: rgba(#000, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.15s, z-index 0s 0.15s;
+
+  &--active {
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.15s, z-index 0s 0s;
+  }
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px 50px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.register-form,
+.login-form {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0s 0.15s;
+
+  &--active {
+    max-height: 100%;
+    transition: 0s 0s;
+  }
+}
+
+.register-form__title,
+.login-form__title {
+  margin-bottom: 20px;
+}
+
+.register-form__input,
+.login-form__input {
+  padding: 10px 15px;
+  border: none;
+  border-bottom: 2px solid $color-purple;
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+.register-form__input:focus,
+.login-form__input:focus {
+  border-bottom-color: $color-red;
+}
+
+.register-form__input + .register-form__input,
+.login-form__input + .login-form__input {
+  margin-top: 10px;
+}
+
+.register-form__inner,
+.login-form__inner {
+  margin-bottom: 15px;
+}
+
+.register-form__submit,
+.login-form__submit {
+  border-radius: 5px;
+  background: $color-green;
+  border: 2px solid $color-green;
+  padding: 10px 15px;
+  color: #fff;
+  transition: background 0.15s, color 0.15s;
+  &:hover {
+    background: transparent;
+    color: #000;
+  }
+}

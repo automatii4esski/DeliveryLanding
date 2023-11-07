@@ -17,12 +17,29 @@
     <header class="header">
       <div class="wide-container">
         <div class="header__inner">
-          <a href="#top" class="logo">
+          <a href="#" class="logo">
             <img class="logo__img" src="./assets/img/logo.png" alt="logo" />
           </a>
           <div class="header__auth">
-            <a href="" class="header__login">Login</a>
-            <a href="" class="header__register">Register</a>
+            <div class="header__buttons">
+              <button type="button" class="header__auth-button header__login">
+                Login
+              </button>
+              /
+              <button
+                type="button"
+                class="header__auth-button header__register"
+              >
+                Register
+              </button>
+            </div>
+            <div class="header__account">
+              <p class="header__account-nickname"></p>
+              -
+              <button type="button" class="header__auth-button header__logout">
+                Logout
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -385,5 +402,64 @@
     </section>
     <div style="padding: 100px"></div>
     <p class="alert"></p>
+    <div class="modal">
+      <div class="modal-content">
+        <form action="" class="register-form">
+          <h3 class="register-form__title">Registration</h3>
+          <div class="register-form__inner">
+            <input
+              type="text"
+              placeholder="Nickname"
+              name="nickname"
+              required
+              minlength="4"
+              class="register-form__input"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+              minlength="3"
+              class="register-form__input"
+            />
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="confirm-password"
+              required
+              minlength="3"
+              class="register-form__input"
+            />
+          </div>
+
+          <button class="register-form__submit">Register</button>
+        </form>
+
+        <form action="" class="login-form">
+          <h3 class="login-form__title">Login</h3>
+          <div class="login-form__inner">
+            <input
+              type="text"
+              placeholder="Nickname"
+              name="nickname"
+              required
+              minlength="4"
+              class="login-form__input"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+              minlength="3"
+              class="login-form__input"
+            />
+          </div>
+
+          <button class="login-form__submit">Login</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

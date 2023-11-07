@@ -1,6 +1,13 @@
 import './main.scss';
+import './ts/state';
+import './ts/alert';
+import './ts/modal';
 import './ts/promo/promo-form-international';
 import './ts/promo/promo-form-domestic';
 import './ts/promo/promo-form-vehicles';
 import './ts/promo/promo-form-tabs';
 import './ts/promo/promo-slider';
+import './ts/auth/login';
+import './ts/auth/register';
+import './ts/auth/logout';
+import './ts/auth/header-actions';

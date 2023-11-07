@@ -1,3 +1,36 @@
 .header {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  z-index: 5;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__auth {
+  font-size: 14px;
+}
+
+.header__buttons,
+.header__account {
   display: none;
+  &--active {
+    display: flex;
+  }
+}
+
+.header__account-nickname {
+  font-weight: 600;
+}
+
+.header__auth-button {
+  background: none;
+  border: none;
+  &:hover {
+    color: $color-purple;
+  }
 }

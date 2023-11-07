@@ -11,7 +11,6 @@ import { showAlert } from '../alert';
     if (!checkboxInputEl.checked) return;
 
     checkboxLabelEl.classList.add('promo-form__label-checkbox--active');
-    console.log(checkboxInputEl.checked);
   };
 
   checkboxLabelEl.addEventListener('click', function (e) {

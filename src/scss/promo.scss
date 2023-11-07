@@ -161,11 +161,11 @@
   }
 
   &--red {
-    background: #ff4800;
+    background: $color-red;
   }
 
   &--red::before {
-    background: #ff4800;
+    background: $color-red;
   }
 }
 
