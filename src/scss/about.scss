@@ -1,0 +1,94 @@
+.about {
+  padding: 96px 0 100px;
+}
+
+.about__sub-title {
+  margin-bottom: 100px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__img {
+  margin-right: 40px;
+}
+
+.about__description {
+  color: #858585;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 17px;
+}
+
+.about__advantages {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+}
+
+.advantage-item__number {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 8px 0;
+  max-width: 80%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 12px;
+    background: url('./assets/img/icons/down-arrow-gray.svg') center/cover
+      no-repeat;
+    right: 13px;
+    bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 11px;
+    left: 55px;
+    top: 50%;
+    right: 25px;
+    border-top: dashed 2px #a0a0a0;
+    border-right: dashed 2px #a0a0a0;
+    z-index: -1;
+  }
+}
+
+.advantage-item__number-count {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  &--blue {
+    background: #2765c8;
+  }
+
+  &--green {
+    background: #37d679;
+  }
+
+  &--yellow {
+    background: #ffae00;
+  }
+}
+
+.advantage-item__title {
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.advantage-item__description {
+  color: #aaa;
+  line-height: 22px;
+  font-size: 14px;
+}
