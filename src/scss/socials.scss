@@ -1,0 +1,53 @@
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #000;
+  width: 40px;
+  height: 40px;
+  padding: 3px 0;
+  box-shadow: -6px 6px 20px 0px rgb(177, 177, 177);
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+  &--facebook {
+    background: linear-gradient(0.32turn, #a9c6f7, #1d5fd3);
+  }
+
+  &--google {
+    background: linear-gradient(0.32turn, #fea4a2, #f95144);
+  }
+
+  &--twitter {
+    background: linear-gradient(0.32turn, #dff7f3, #4dcfbc);
+  }
+  &--geo {
+    background: #fff;
+  }
+  &--phone {
+    background: #eda306;
+  }
+}
+
+.socials__item + .socials__item {
+  margin-left: 12px;
+}
+
+.socials__icon {
+  height: 20px;
+
+  &--facebook {
+    height: 30px;
+  }
+
+  &--phone {
+    height: 25px;
+  }
+}
