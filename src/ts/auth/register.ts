@@ -22,8 +22,6 @@ import { renderHeaderActions } from './header-actions';
     ];
 
     if (passwordEl.value !== confirmPasswordEl.value) {
-      console.log(1);
-
       confirmPasswordEl.setCustomValidity("Passwords Don't Match");
       confirmPasswordEl.reportValidity();
       return false;
@@ -43,7 +41,6 @@ import { renderHeaderActions } from './header-actions';
 
   formEl.addEventListener('submit', function (e) {
     e.preventDefault();
-    console.log(3);
 
     if (!isFormValid()) return;
     const formData = new FormData(this);

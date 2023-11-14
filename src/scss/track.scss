@@ -63,4 +63,32 @@
 
 .track__description {
   font-weight: 300;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.track__answer {
+  background: #fff;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.track__answer-text {
+  margin-right: 10px;
+}
+
+.track__answer-button {
+  border: none;
+  padding: 5px;
+  background: none;
 }

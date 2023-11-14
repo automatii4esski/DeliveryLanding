@@ -14,3 +14,4 @@ import './ts/auth/header-actions';
 import './ts/gallery/gallery';
 import './ts/comments/comments-slider';
 import './ts/window';
+import './ts/track/track';
