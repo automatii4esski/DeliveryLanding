@@ -110,7 +110,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   transition: opacity 0.15s, position 0s 0.15s, z-index 0s 0.15s;
 
   &--active {

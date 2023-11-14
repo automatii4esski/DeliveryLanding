@@ -675,6 +675,7 @@
     <section class="gallery">
       <div class="container">
         <div class="gallery__inner">
+          <input type="text" class="gallery__control-input" />
           <h2 class="gallery__title title">
             <span class="gallery__title-span title__span">Gallery</span>
             <p class="title__shadow">
@@ -685,42 +686,117 @@
             Lorem Ipsum is simply dummy text
           </p>
           <div class="gallery__content">
-            <div class="gallery__img-wrapper">
-              <img
-                class="gallery__img"
-                src="./assets/img/content/gallery/1.jpg"
-                alt="image"
-              />
+            <div class="gallery__content-main">
+              <div class="gallery__img-wrapper gallery-main__img-wrapper">
+                <img
+                  class="gallery__img"
+                  src="./assets/img/content/gallery/1.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-main__img-wrapper">
+                <img
+                  class="gallery__img"
+                  src="./assets/img/content/gallery/2.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-main__img-wrapper">
+                <img
+                  class="gallery__img"
+                  src="./assets/img/content/gallery/3.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-main__img-wrapper">
+                <img
+                  class="gallery__img"
+                  src="./assets/img/content/gallery/4.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-main__img-wrapper">
+                <img
+                  class="gallery__img"
+                  src="./assets/img/content/gallery/5.jpg"
+                  alt="image"
+                />
+              </div>
             </div>
-            <div class="gallery__img-wrapper">
-              <img
-                class="gallery__img"
-                src="./assets/img/content/gallery/2.jpg"
-                alt="image"
-              />
-            </div>
-            <div class="gallery__img-wrapper">
-              <img
-                class="gallery__img"
-                src="./assets/img/content/gallery/3.jpg"
-                alt="image"
-              />
-            </div>
-            <div class="gallery__img-wrapper">
-              <img
-                class="gallery__img"
-                src="./assets/img/content/gallery/4.jpg"
-                alt="image"
-              />
-            </div>
-            <div class="gallery__img-wrapper">
-              <img
-                class="gallery__img"
-                src="./assets/img/content/gallery/5.jpg"
-                alt="image"
-              />
+            <div class="gallery__content-extended">
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/6.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/7.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/8.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/9.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/10.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/11.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/12.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/13.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/14.jpg"
+                  alt="image"
+                />
+              </div>
+              <div class="gallery__img-wrapper gallery-extended__img-wrapper">
+                <img
+                  class="gallery__img"
+                  data-src="./assets/img/content/gallery/15.jpg"
+                  alt="image"
+                />
+              </div>
             </div>
           </div>
+
           <div class="gallery__button-wrapper">
             <button class="gallery__button">View All Gallery</button>
           </div>
@@ -851,6 +927,10 @@
             <div class="comments__text-item">
               <p class="comments__text">
                 It is a long established fact that a reader will be distracted
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                voluptatum nam veniam iure voluptas suscipit incidunt explicabo
+                ullam veritatis, facilis voluptate porro blanditiis, accusamus
+                dolore quaerat alias facere illo et?
               </p>
               <p class="comments__text-name">Abigail Irene</p>
             </div>
@@ -1101,6 +1181,10 @@
     </footer>
     <p class="alert"></p>
     <div class="modal">
+      <div class="modal__img-wrapper">
+        <img class="modal__img" alt="image" />
+      </div>
+
       <div class="modal-content">
         <form action="" class="register-form">
           <h3 class="register-form__title">Registration</h3>
@@ -1159,5 +1243,6 @@
         </form>
       </div>
     </div>
+    <div class="gallery-modal"></div>
   </body>
 </html>

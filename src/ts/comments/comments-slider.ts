@@ -3,12 +3,13 @@ const itemsDiff = Math.floor(avatarItemsToDisplay / 2);
 const initialItemIndex = itemsDiff; //value have to be 0 or positive
 
 let currentAvatarIndex = initialItemIndex + itemsDiff;
+let currentTextIndex = initialItemIndex;
 
 const avatarsWrapperEl = document.querySelector('.comments__avatars');
 const commentsWrapperEl = document.querySelector(
   '.comments__text-wrapper'
 ) as HTMLElement;
-
+commentsWrapperEl.addEventListener('load', function () {});
 const avatarItems = avatarsWrapperEl.children;
 const commentsItems = commentsWrapperEl.children;
 const nextButton = document.querySelector('.comments__next-button');
@@ -30,18 +31,32 @@ for (let index = 0; index < itemsDiff; index++) {
   el.dataset.index = String(i);
 });
 
-const setClassesOnItems = function (index: number) {
-  avatarItems[index].classList.add('comments__avatar-wrapper--current');
-  avatarItems[index + 1]?.classList.add('comments__avatar-wrapper--secondary');
-  avatarItems[index - 1]?.classList.add('comments__avatar-wrapper--secondary');
+const setClassesOnItems = function () {
+  avatarItems[currentAvatarIndex].classList.add(
+    'comments__avatar-wrapper--current'
+  );
+  avatarItems[currentAvatarIndex + 1]?.classList.add(
+    'comments__avatar-wrapper--secondary'
+  );
+  avatarItems[currentAvatarIndex - 1]?.classList.add(
+    'comments__avatar-wrapper--secondary'
+  );
   for (let i = 2; i <= itemsDiff; i++) {
-    avatarItems[index + i]?.classList.add('comments__avatar-wrapper--tertiary');
-    avatarItems[index - i]?.classList.add('comments__avatar-wrapper--tertiary');
+    avatarItems[currentAvatarIndex + i]?.classList.add(
+      'comments__avatar-wrapper--tertiary'
+    );
+    avatarItems[currentAvatarIndex - i]?.classList.add(
+      'comments__avatar-wrapper--tertiary'
+    );
   }
-  const newActiveComment = commentsItems[index - itemsDiff] as HTMLElement;
+};
 
-  newActiveComment.classList.add('comments__text-item--active');
-  commentsWrapperEl.style.height = `${newActiveComment.offsetHeight}px`;
+export const calculateTextCommentHeight = function () {
+  const activeComment = commentsItems[currentTextIndex] as HTMLElement;
+
+  activeComment.classList.add('comments__text-item--active');
+
+  commentsWrapperEl.style.height = `${activeComment.offsetHeight}px`;
 };
 
 const removeClassesOnCurrentItems = function () {
@@ -70,13 +85,19 @@ const removeClassesOnCurrentItems = function () {
 const slideNext = function () {
   if (currentAvatarIndex + 1 === avatarItems.length - itemsDiff) return;
   removeClassesOnCurrentItems();
-  setClassesOnItems(++currentAvatarIndex);
+  currentAvatarIndex++;
+  currentTextIndex++;
+  setClassesOnItems();
+  calculateTextCommentHeight();
 };
 
 const slidePrev = function () {
   if (currentAvatarIndex === itemsDiff) return;
   removeClassesOnCurrentItems();
-  setClassesOnItems(--currentAvatarIndex);
+  currentAvatarIndex--;
+  currentTextIndex--;
+  setClassesOnItems();
+  calculateTextCommentHeight();
 };
 
 nextButton.addEventListener('click', function () {
@@ -99,7 +120,11 @@ avatarsWrapperEl.addEventListener('click', function (e) {
 
   removeClassesOnCurrentItems();
   currentAvatarIndex = index;
-  setClassesOnItems(index);
+  currentTextIndex = index - itemsDiff;
+
+  setClassesOnItems();
+  calculateTextCommentHeight();
 });
 
-setClassesOnItems(currentAvatarIndex);
+setClassesOnItems();
+calculateTextCommentHeight();

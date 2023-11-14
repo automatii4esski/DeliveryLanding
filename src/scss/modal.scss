@@ -1,5 +1,5 @@
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -22,11 +22,23 @@
 
 .modal-content {
   background: #fff;
-  padding: 30px 50px;
   border-radius: 20px;
   text-align: center;
-  max-width: 400px;
+  max-width: 0;
+  padding: 0;
+  opacity: 0;
   width: 100%;
+
+  transition: opacity 0s 0.15s, max-width 0s 0.15s, padding 0s 0.15s,
+    overflow 0s 0.15s;
+
+  &--active {
+    padding: 30px 50px;
+    max-width: 400px;
+    overflow: visible;
+    opacity: 1;
+    transition: none;
+  }
 }
 
 .register-form,
@@ -82,5 +94,19 @@
   &:hover {
     background: transparent;
     color: #000;
+  }
+}
+
+.modal__img-wrapper {
+  max-width: 0;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.15s, max-width 0s 0.15s;
+
+  &--active {
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1);
+    transition: transform 0.35s, max-width 0s;
   }
 }

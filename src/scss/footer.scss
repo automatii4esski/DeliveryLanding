@@ -95,6 +95,25 @@
   align-items: center;
   margin-right: 30px;
   color: #eda306;
+
+  &:hover .footer__help-text::before {
+    width: 100%;
+  }
+}
+
+.footer__help-text {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: #eda306;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.15s;
+  }
 }
 
 .footer__help-question {

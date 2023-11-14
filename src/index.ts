@@ -11,4 +11,6 @@ import './ts/auth/login';
 import './ts/auth/register';
 import './ts/auth/logout';
 import './ts/auth/header-actions';
+import './ts/gallery/gallery';
 import './ts/comments/comments-slider';
+import './ts/window';

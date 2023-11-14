@@ -1,11 +1,6 @@
 import { showAlert } from '../alert';
 import { hideModal, showModal } from '../modal';
-import {
-  usersData,
-  currentUser,
-  setCurrentUser,
-  setOnHideModal,
-} from '../state';
+import { usersData, setCurrentUser, setOnHideModal } from '../state';
 import { renderHeaderActions } from './header-actions';
 
 {
@@ -47,6 +42,5 @@ import { renderHeaderActions } from './header-actions';
     showModal();
     formEl.classList.add('login-form--active');
     setOnHideModal(hideForm);
-    console.log(currentUser);
   });
 }
