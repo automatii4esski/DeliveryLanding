@@ -2,7 +2,7 @@ import { showAlert } from '../alert';
 import { hideModal, showModal } from '../modal';
 import { usersData, setCurrentUser, setOnHideModal } from '../state';
 import { RegisterFormElementsType } from '../types';
-import { renderHeaderActions } from './header-actions';
+import { renderHeaderActions } from './actions';
 
 {
   //Form

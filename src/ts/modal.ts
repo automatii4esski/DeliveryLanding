@@ -8,6 +8,7 @@ const modalImgWrapper = modalEl.querySelector(
 const modalImg = modalImgWrapper.querySelector(
   '.modal__img'
 ) as HTMLImageElement;
+const bodyEl = document.querySelector('body');
 
 modalEl.addEventListener('click', function (e) {
   hideModal();
@@ -19,22 +20,26 @@ modalContentEl.addEventListener('click', function (e) {
 });
 
 export const showModal = function () {
+  bodyEl.classList.add('body--hidden');
   modalEl.classList.add('modal--active');
   modalContentEl.classList.add('modal-content--active');
 };
 
 export const hideModal = function () {
+  bodyEl.classList.remove('body--hidden');
   modalEl.classList.remove('modal--active');
   modalContentEl.classList.remove('modal-content--active');
 };
 
 export const showGalleryModal = function (imgPath: string) {
+  bodyEl.classList.add('body--hidden');
   modalEl.classList.add('modal--active');
   modalImgWrapper.classList.add('modal__img-wrapper--active');
   modalImg.src = imgPath;
 };
 
 export const hideGalleryModal = function () {
+  bodyEl.classList.remove('body--hidden');
   modalEl.classList.remove('modal--active');
   modalImgWrapper.classList.remove('modal__img-wrapper--active');
 };

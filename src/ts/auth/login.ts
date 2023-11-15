@@ -1,7 +1,7 @@
 import { showAlert } from '../alert';
 import { hideModal, showModal } from '../modal';
 import { usersData, setCurrentUser, setOnHideModal } from '../state';
-import { renderHeaderActions } from './header-actions';
+import { renderHeaderActions } from './actions';
 
 {
   const findUser = function (formData: FormData) {

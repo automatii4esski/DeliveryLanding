@@ -1,5 +1,5 @@
 import { setCurrentUser } from '../state';
-import { renderHeaderActions } from './header-actions';
+import { renderHeaderActions } from './actions';
 
 const logoutButtonEl = document.querySelector('.header__logout');
 
