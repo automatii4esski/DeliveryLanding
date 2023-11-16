@@ -51,3 +51,29 @@ body {
   font-size: 20px;
   text-align: center;
 }
+
+@media (max-width: 840px) {
+  .sub-title {
+    font-size: 18px;
+  }
+
+  .title__shadow {
+    font-size: 60px;
+    line-height: 60px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+  .sub-title {
+    font-size: 16px;
+  }
+  .title__shadow {
+    font-size: 50px;
+    line-height: 50px;
+    bottom: 15px;
+  }
+}

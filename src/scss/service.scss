@@ -22,7 +22,6 @@
 
 .service-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex: 1 1 356px;
 }
@@ -72,4 +71,30 @@
 .service-item__description {
   color: $color-gray;
   font-size: 15px;
+}
+
+@media (max-width: 840px) {
+  .service {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .service {
+    padding: 50px 0;
+  }
+  .service-item__icon-wrapper {
+    height: 70px;
+    flex-basis: 75px;
+  }
+
+  .service-item__title {
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 440px) {
+  .service__box {
+    row-gap: 20px;
+  }
 }

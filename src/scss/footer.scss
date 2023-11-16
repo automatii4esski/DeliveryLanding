@@ -129,3 +129,38 @@
   margin-right: 10px;
   color: #fff;
 }
+@media (max-width: 840px) {
+  .footer__content {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  .footer__description {
+    flex: 1 1 200px;
+    order: 1;
+  }
+
+  .footer__bottom-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__copyright {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__links {
+    flex: 1 1 200px;
+    order: 2;
+  }
+
+  .footer__help {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__help-link {
+    margin-bottom: 15px;
+  }
+}

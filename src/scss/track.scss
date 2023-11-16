@@ -92,3 +92,34 @@
   padding: 5px;
   background: none;
 }
+
+@media (max-width: 640px) {
+  .track {
+    padding: 40px 0;
+  }
+
+  .track__submit {
+    min-width: 0;
+  }
+
+  .track__title {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .track__content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .track__input {
+    min-height: 40px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+  }
+  .track__form {
+    flex-direction: column;
+    padding: 10px;
+  }
+}

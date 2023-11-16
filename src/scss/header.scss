@@ -61,3 +61,23 @@
     }
   }
 }
+
+@media (max-width: 840px) {
+  .header {
+    position: absolute;
+
+    &--slick {
+      position: fixed;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .header__logo {
+    display: none;
+  }
+
+  .header__inner {
+    justify-content: flex-end;
+  }
+}

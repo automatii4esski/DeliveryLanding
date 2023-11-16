@@ -5,3 +5,7 @@ window.addEventListener('resize', function () {
   calculateTextCommentHeight();
   calculateGalleryHeight();
 });
+
+document.fonts.ready.then(function () {
+  calculateTextCommentHeight();
+});

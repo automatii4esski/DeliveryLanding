@@ -13,7 +13,7 @@ import './ts/auth/logout';
 import './ts/auth/actions';
 import './ts/gallery/gallery';
 import './ts/comments/comments-slider';
-import './ts/window';
+import './ts/document';
 import './ts/track/track';
 import './ts/header/slick-header';
 import './ts/header/menu';

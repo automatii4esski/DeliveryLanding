@@ -50,7 +50,11 @@
 
 .how__title,
 .how__subtitle {
-  text-align-last: left;
+  text-align: left;
+}
+
+.how__title-shadow {
+  display: none;
 }
 
 .how__items {
@@ -97,10 +101,46 @@
   margin-bottom: 9px;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 16px;
 }
 
 .how-item__description {
   font-size: 14px;
   line-height: 21px;
   color: #f3f3f3;
+}
+
+@media (max-width: 840px) {
+  .how {
+    background: none;
+  }
+  .how__inner {
+    display: block;
+  }
+  .how__img-wrapper {
+    display: none;
+  }
+  .how__title-wrapper {
+    padding: 0;
+    text-align: center;
+  }
+  .how__title,
+  .how__subtitle {
+    text-align: center;
+  }
+  .how-item {
+    padding: 35px 25px 25px;
+  }
+  .how__title-shadow {
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  .how__items {
+    display: block;
+  }
+  .how-item {
+    max-width: 100%;
+    padding: 35px 25px 35px;
+  }
 }

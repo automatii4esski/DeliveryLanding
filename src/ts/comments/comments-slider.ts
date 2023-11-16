@@ -5,7 +5,9 @@ const initialItemIndex = itemsDiff; //value have to be 0 or positive
 let currentAvatarIndex = initialItemIndex + itemsDiff;
 let currentTextIndex = initialItemIndex;
 
-const avatarsWrapperEl = document.querySelector('.comments__avatars');
+const avatarsWrapperEl = document.querySelector(
+  '.comments__avatars'
+) as HTMLElement;
 const commentsWrapperEl = document.querySelector(
   '.comments__text-wrapper'
 ) as HTMLElement;
@@ -54,7 +56,7 @@ const setClassesOnItems = function () {
 export const calculateTextCommentHeight = function () {
   const activeComment = commentsItems[currentTextIndex] as HTMLElement;
 
-  activeComment.classList.add('comments__text-item--active');
+  commentsItems[currentTextIndex].classList.add('comments__text-item--active');
 
   commentsWrapperEl.style.height = `${activeComment.offsetHeight}px`;
 };
