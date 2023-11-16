@@ -1,5 +1,5 @@
 import { showAlert } from '../alert';
-import { hideModal, showModal } from '../modal';
+import { hideContentModal, showContentModal } from '../modal';
 import { usersData, setCurrentUser, setOnHideModal } from '../state';
 import { RegisterFormElementsType } from '../types';
 import { renderHeaderActions } from './actions';
@@ -57,7 +57,7 @@ import { renderHeaderActions } from './actions';
     };
 
     showAlert('Register success');
-    hideModal();
+    hideContentModal();
     hideForm();
     setCurrentUser(newUser);
     renderHeaderActions();
@@ -69,7 +69,7 @@ import { renderHeaderActions } from './actions';
 
   registerButtonEl.addEventListener('click', function (e) {
     e.stopPropagation();
-    showModal();
+    showContentModal();
     formEl.classList.add('register-form--active');
     setOnHideModal(hideForm);
   });

@@ -1,5 +1,5 @@
 import { showAlert } from '../alert';
-import { hideModal, showModal } from '../modal';
+import { hideContentModal, showContentModal } from '../modal';
 import { usersData, setCurrentUser, setOnHideModal } from '../state';
 import { renderHeaderActions } from './actions';
 
@@ -25,7 +25,7 @@ import { renderHeaderActions } from './actions';
     const user = findUser(new FormData(formEl));
     if (user) {
       showAlert('Login success');
-      hideModal();
+      hideContentModal();
       hideForm();
       setCurrentUser(user);
       renderHeaderActions();
@@ -39,7 +39,7 @@ import { renderHeaderActions } from './actions';
 
   loginButtonEl.addEventListener('click', function (e) {
     e.stopPropagation();
-    showModal();
+    showContentModal();
     formEl.classList.add('login-form--active');
     setOnHideModal(hideForm);
   });

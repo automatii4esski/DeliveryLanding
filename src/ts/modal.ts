@@ -11,7 +11,7 @@ const modalImg = modalImgWrapper.querySelector(
 const bodyEl = document.querySelector('body');
 
 modalEl.addEventListener('click', function (e) {
-  hideModal();
+  hideContentModal();
   onHideModal();
 });
 
@@ -22,24 +22,30 @@ modalContentEl.addEventListener('click', function (e) {
 export const showModal = function () {
   bodyEl.classList.add('body--hidden');
   modalEl.classList.add('modal--active');
-  modalContentEl.classList.add('modal-content--active');
 };
 
 export const hideModal = function () {
   bodyEl.classList.remove('body--hidden');
   modalEl.classList.remove('modal--active');
+};
+
+export const showContentModal = function () {
+  showModal();
+  modalContentEl.classList.add('modal-content--active');
+};
+
+export const hideContentModal = function () {
+  hideModal();
   modalContentEl.classList.remove('modal-content--active');
 };
 
 export const showGalleryModal = function (imgPath: string) {
-  bodyEl.classList.add('body--hidden');
-  modalEl.classList.add('modal--active');
+  showModal();
   modalImgWrapper.classList.add('modal__img-wrapper--active');
   modalImg.src = imgPath;
 };
 
 export const hideGalleryModal = function () {
-  bodyEl.classList.remove('body--hidden');
-  modalEl.classList.remove('modal--active');
+  hideModal();
   modalImgWrapper.classList.remove('modal__img-wrapper--active');
 };

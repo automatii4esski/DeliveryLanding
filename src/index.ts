@@ -16,3 +16,4 @@ import './ts/comments/comments-slider';
 import './ts/window';
 import './ts/track/track';
 import './ts/header/slick-header';
+import './ts/header/menu';
