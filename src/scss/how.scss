@@ -30,6 +30,8 @@
     rgba(66, 45, 205, 1) 82%,
     rgba(72, 50, 220, 1) 82%
   );
+  opacity: 0;
+  z-index: 2;
 }
 
 .how__img {
@@ -46,6 +48,7 @@
 .how__title-wrapper {
   padding-left: 90px;
   margin-bottom: 57px;
+  opacity: 0;
 }
 
 .how__title,
@@ -67,6 +70,7 @@
   flex: 1 1 33%;
   padding: 35px 41px 20px;
   position: relative;
+  opacity: 0;
 
   &--purple {
     background: $color-purple;

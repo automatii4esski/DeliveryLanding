@@ -17,3 +17,4 @@ import './ts/document';
 import './ts/track/track';
 import './ts/header/slick-header';
 import './ts/header/menu';
+import './ts/show-animations';

@@ -1,5 +1,6 @@
 .gallery {
   padding: 134px 0 77px;
+  opacity: 0;
 }
 
 .gallery__inner {
@@ -15,6 +16,7 @@
   margin-bottom: 51px;
   transition: height 0.5s;
   overflow: hidden;
+  opacity: 0;
 }
 
 .gallery__content-main {

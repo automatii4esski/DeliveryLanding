@@ -52,6 +52,22 @@ body {
   text-align: center;
 }
 
+.show {
+  animation: show 1.5s forwards;
+}
+
+.show-opacity {
+  animation: show-opacity 1.5s forwards;
+}
+
+.show-delay {
+  animation: show 1.5s 0.5s forwards;
+}
+
+.show-opacity-delay {
+  animation: show-opacity 1.5s 0.5s forwards;
+}
+
 @media (max-width: 840px) {
   .sub-title {
     font-size: 18px;
