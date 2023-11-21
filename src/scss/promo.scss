@@ -1,8 +1,3 @@
-.promo{
-  opacity: 0;
-
-}
-
 .promo__inner {
   height: 100vh;
   display: flex;
@@ -13,6 +8,7 @@
   flex: 0 1 556px;
   position: relative;
   display: flex;
+  opacity: 0;
 }
 
 .promo-slider__items-wrapper {
@@ -159,6 +155,7 @@
   justify-content: center;
   flex: 1 1 auto;
   padding-top: 65px;
+  opacity: 0;
 }
 
 .promo-form__title {

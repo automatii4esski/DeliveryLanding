@@ -21,12 +21,17 @@
 
 {
   const promoEl = document.querySelector('.promo');
+  const menuEl = promoEl.querySelector('.menu');
+  const promoSliderEl = promoEl.querySelector('.promo-slider');
+  const promoFormEl = promoEl.querySelector('.promo-form');
 
   const observer = new IntersectionObserver(
     function (entries, observer) {
       entries.forEach((e) => {
         if (e.isIntersecting) {
-          promoEl.classList.add('show-opacity');
+          menuEl.classList.add('show-opacity');
+          promoSliderEl.classList.add('show-opacity');
+          promoFormEl.classList.add('show-opacity');
           observer.unobserve(promoEl);
         }
       });
